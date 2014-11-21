@@ -1,0 +1,14 @@
+Package: weierstrass
+Title: Combining posterior samples from multiple subsets.
+Version: 0.1
+Authors@R: "Xiangyu Wang <xw56@stat.duke.edu> [aut, cre]"
+Description: The Weierstrass sampler is a "divide-conquer-combine" type
+    parallel MCMC sampler. The implementation in this package is the particular
+    rejection sampler which directly works on the subset posterior samples as a
+    post-processing sampler. The method make use of rejection sampling or
+    importance sampling to combine the subset posterior samples for
+    approximating the posterior obtained on the full data set.
+Depends:
+    R (>= 3.1.1)
+License: GPL-3
+LazyData: true
