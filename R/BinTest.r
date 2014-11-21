@@ -88,7 +88,7 @@ BinTest <- function(prob = 0.001, samp = 20000, n = 20000, m = 20, accept = 0.1,
         cols = ceiling((p-1)/rows)
         par(mfrow = c(rows, cols))
         for(i in 1:(p-1)){
-            plot(density(true.posterior[,i]),col='red',main = paste('Posterior for beta',toString(i)))
+            plot(density(true.posterior[,i]),col='red',main = paste('Posterior for prob'))
             lines(density(CombSample1[,i]),col = 'blue')
             lines(density(CombSample2[,i]),col = 'yellow',lty = 2)
             lines(density(ave1[,i]),col = 'green')
