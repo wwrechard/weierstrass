@@ -88,12 +88,12 @@ BinTest <- function(prob = 0.001, samp = 20000, n = 20000, m = 20, accept = 0.1,
         cols = ceiling((p-1)/rows)
         par(mfrow = c(rows, cols))
         for(i in 1:(p-1)){
-            plot(density(true.posterior[,i]),col='red',main = paste('Posterior for prob'))
+            plot(density(true.posterior[,i]),col='red',main = paste('Posterior for the parameter'))
             lines(density(CombSample1[,i]),col = 'blue')
             lines(density(CombSample2[,i]),col = 'yellow',lty = 2)
             lines(density(ave1[,i]),col = 'green')
             lines(density(ave2[,i]),col = 'pink')
-            abline(v = prob, col = 'black')
+            abline(v = prob, col = 'black', lty = 2)
             if(prob>0.5) posi = 'topleft'
             else posi = 'topright'
             legend(posi,c('Fullset','Weierstrass', 'Unweight weiers' ,'Weighted ave','average','true value'),col = c('red','blue','yellow','green','pink','black'),lty = c(1,1,2,1,1,1))
