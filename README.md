@@ -4,11 +4,11 @@ weierstrass
 An R implementation of Weierstrass rejection sampler for combining posterior samples from multiple subsets.
 
 #Description
-The Weierstrass sampler is a "divide-conquer-combine" type parallel MCMC sampler. The implementation in this package is the particular post-processing sampler. The method make use of rejection sampling or importance sampling to combine the subset posterior samples for approximating the posterior obtained on the full data set.
+The Weierstrass sampler is a "divide-conquer-combine" type parallel MCMC sampler. The implementation in this package is the rejection sampler which directly works on the subset posterior samples as a post-processing sampler. The method make use of rejection sampling or importance sampling to combine the subset posterior samples for approximating the posterior obtained on full data set.
 
-To combine subset posterior samples, the algorithm adopts the 'pairwise-combining' strategy, i.e, it will first combine the subset pairwisely to obtain half numbers of new subsets and then repeat the procedure until obtaining the final one. More detailed information is provided in the R-help documentation accompanied with function.
+To combine subset posterior samples, the algorithm adopts the 'pairwise-combining' strategy, i.e, it first combines the subset pairwisely to obtain half numbers of new subsets and then repeats the procedure until obtaining the final one. More detailed information is provided in the R-help documentation accompanied with functions.
 
-Besides the main function, two testing models are also included in the pacakge. Uers can build logistic model and binomial model with user-specified features (such as number of predictors, predictor correlations, etc) and test the performance of the weierstrass rejection sampler. The testing functions integrate full functionalities of data generating, inference and combining. The logistic model requires the package `BayesLogit` (available on R-CRAN) for inference. More detailed information is also provided in the R-help documentation.
+Besides the main function, two testing models are also included in the pacakge. Uers can build logistic model and binomial model with user-specified features (such as number of predictors, predictor correlations, etc) for testing the performance of the weierstrass rejection sampler. The testing functions integrate full functionalities of data generating, inference and combining. The logistic model requires the package `BayesLogit` (available on R-CRAN) for posterior sampling. More detailed information can be found in the R-help documentation.
 
 #Installation
 There are several simple ways to install the package for R. Building the package requires `devtools`. Just type the following lines in your R console (Suppose your current working directory is where you want to keep the package),
