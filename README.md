@@ -38,7 +38,7 @@ To call up the package, type in the R console,
 setwd(directory_that_weierstrass_is_installed)
 library(weierstrass)
 ```
-The detail of functions are documented in the R-help docs for different functions. Type
+The detailed information of functions is documented in their R-help docs. Type
 ```
 ?weierstrass
 ```
