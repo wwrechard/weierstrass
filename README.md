@@ -42,11 +42,15 @@ The detail of functions are documented in the R-help docs for different function
 ```
 ?weierstrass
 ```
-will call up the help document for the function `weierstrass`. One simple linear regression example is provided with this function, to view that,
+will call the help document for the function `weierstrass`. One simple linear regression example is included in the help docs, to view that simply type,
 ```
 example('weierstrass')
 ```
-`logitTest` and `BinTest` are two testing functions for Weierstrass rejection sampling. The details can be found with their help documents as well.
+`logitTest` and `BinTest` are two testing functions for Weierstrass rejection sampling. The details can be found in their help documents by typing
+```
+?logitTest
+?BinTest
+```
 
 #References
 Xiangyu Wang, David B. Dunson. Parallelizing MCMC via Weierstrass Sampler. [http://arxiv.org/abs/1312.4605]
