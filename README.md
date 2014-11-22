@@ -16,7 +16,7 @@ There are several simple ways to install the package for R. If `devtools` were i
 library(devtools)
 install_github('weierstrass','wwrechard')
 ```
-
+Now the package is fully functional, and you can view any accompanied help docs directly.
 
 Alternatively, one can download the whole repository manually (in one folder and assume the folder is named "weierstrass") into the target directory, or obtain via `git`,
 ```
