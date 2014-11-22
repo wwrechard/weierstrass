@@ -28,7 +28,7 @@ and then in the R console (Suppose your current working directory is where you w
 library(devtools)
 install('weierstrass')
 ```
-However, this way might require restarting R to correctly view the R-help documentation for the functions.
+However, this way might require restarting R in order to correctly view the R-help documentation for the functions.
 
 Finally, if you are not interested in the R-help documentation, you can simply download "weierstrass.r" under "./R" on this repository. This is the main function for weierstrass rejection sampling. "logitTest.r" and "BinTest.r" under the same directory are the two testing functions. All of the three can be directly `source` and used in R.
 
