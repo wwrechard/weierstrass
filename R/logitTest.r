@@ -78,8 +78,8 @@ logitTest <- function(n = 20000, samp = 20000, p = 5, m = 20, r = 0.3, draw = TR
     CombSample1 = weierstrass(Samples, accept = accept)
     
     cat('completed.\n\n')
-    cat(paste('starting the unweighted weierstrass rejection sampling, acceptance rate is',toString(accept/5),'\n\n'))
-    CombSample2 = weierstrass(Samples, weight = FALSE, accept = accept/5)
+    cat(paste('starting the unweighted weierstrass rejection sampling, acceptance rate is',toString(accept),'\n\n'))
+    CombSample2 = weierstrass(Samples, weight = FALSE, accept = accept)
     cat('completed.\n\n')
 
     #plot the result
