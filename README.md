@@ -11,12 +11,13 @@ To combine subset posterior samples, the algorithm adopts the 'pairwise-combinin
 Besides the main function, two testing models are also included in the pacakge. Uers can build logistic model and binomial model with user-specified features (such as number of predictors, predictor correlations, etc) and test the performance of the weierstrass rejection sampler. The testing functions integrate full functionalities of data generating, inference and combining. The logistic model requires the package `BayesLogit` (available on R-CRAN) for inference. More detailed information is also provided in the R-help documentation.
 
 #Installation:
-There are several simple ways to install the package for R. If `devtools` were installed in your R environment, just type the following lines in your R console (suppose your current working directory is where you tend to keep `weierstrass`),
+There are several simple ways to install the package for R. Building the package requires `devtools`. Just type the following lines in your R console,
 ```
 library(devtools)
+setwd(your_target_directory)
 install_github('weierstrass','wwrechard')
 ```
-Now the package is fully functional, and you can view any accompanied help docs directly.
+Now the package is fully functional.
 
 Alternatively, one can download the whole repository manually (in one folder and assume the folder is named "weierstrass") into the target directory, or obtain via `git`,
 ```
@@ -25,6 +26,7 @@ git clone https://github.com/wwrechard/weierstrass.git
 ```
 and then in the R console,
 ```
+library(devtools)
 setwd(your_target_directory)
 install('weierstrass')
 ```
