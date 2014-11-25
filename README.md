@@ -1,4 +1,4 @@
-weierstrass
+Weierstrass Sampler for parallel MCMC
 ===========
 
 An R implementation of Weierstrass rejection sampler for combining posterior samples from multiple subsets.
